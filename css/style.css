@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/* Class Reset */
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body{
+    background-image: url(../img/controlador.jpg);
+    color: white;
+
+}
+h1{
+    text-align: center;
+    color: whitesmoke;
+}
+.social{
+    width: 25px;
+    
+}
