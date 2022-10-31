@@ -1,87 +1,271 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./img/favicon.ico">
-    <title>Primera Entrega</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="keywords" content="servicio, discoteca, iluminación, dj, fiestas">
+    <meta name="description"
+        content="Servicio integral Para Fiestas y eventos de todo tipo. Salones Para Fiestas Decoración Para Fiestas Discoteca Para Fiestas todo para fiestas...">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>|Para Fiestas| Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/35e1c1c54f.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <h1>| Para Fiestas |</h1>
-    <br><br><br><br><br>
+    <section class="section1">
+        <nav class="navbar navbar-expand-lg">
+            <div class="animate__animated animate__fadeInUp">
+                <img src="./img/logo.png" class="logo" alt="Logo Dj" title="Logo DJ">
+            </div>
+            <div class="container animate__animated animate__fadeInUp">
+                <a class="navbar-brand" href="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon bg-warning"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/sobre_nosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Galería
+                            </a>
+                            <ul class="dropdown-menu row bg-transparent">
+                                <li><a class="dropdown-item text-warning" href="./pages/galeria.html">Imágenes</a></li>
+                                <li><a class="dropdown-item text-warning" href="./pages/galeria.html#video">Video</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html#formulario">Contacto</a>
+                        </li>
+                    </ul>
+                    <span class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success text-light" type="submit">Buscar</button>
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section class="section2" id="section2">
+        <!-- Título Principal -->
+        <h1>
+            <strong class="djh1">DJ CARLOS HERMIDA</strong>
+            <br><br>
+            <strong>
+                <i>| Para Fiestas |</i></strong></b>
+        </h1>
+    </section>
+
+    <h2 class="aimate__animated animate__fadeInLeft container"><b>Servicio para fiestas y eventos</b></h2>
+    <!-- problema width solucionado -->
     <section class="section3">
-        <div class="servicios-div3">
-            <h2><em>Servicios</em></h2>
-            <!-- Tabla De Servicios -->
-            <div class="container">
-                <article class="container-table">
-                    <table class="table" border="2" cellpadding="12" cellspacing="6">
-                        <tr>
-                            <th>Servicio</th>
-                            <th>Descripción</th>
-                            <th>Precio</th>
-                        </tr>
-                        <tr>
-                            <td>Básico </td>
-                            <td>Audio + Iluminación LED + DJ - 1 atril con 2 tachos LED, 1 efecto Revo, 1 Flash y 2
-                                Cajas acústicas activas.</td>
-                            <td>$5.500</td>
-                        </tr>
-                        <tr>
-                            <td>Standar</td>
-                            <td>Audio + Iluminación LED + DJ - 1 atril con 2 cabezas móviles wash, 1 efecto LED,
-                                Máquina
-                                de humo de 900w, 1 Flash y 2 Cajas acústicas FBT 12" + atriles.</td>
-                            <td>$7.500</td>
-                        </tr>
-                        <tr>
-                            <td>Full</td>
-                            <td>Audio Digital + Iluminación + DJ - 2 Bola de espejos, 2 Pies elevadores + cercha de
-                                3
-                                mts + 2 atriles para cajas, 2 cabezas móviles wash, 2 Barras LED Octobeam, Máquina
-                                de
-                                humo de 1500w, 2 Lasers (verde y azul, Pantalla Gigante HD de 100".</td>
-                            <td>$10.000</td>
-                        </tr>
-                        <tr>
-                            <td>Full HD</td>
-                            <td>Audio Digital + Iluminación Profesional + DJ - 4 Bolas de espejos, 2 pies elevadores
-                                + 5
-                                mts cercha, 4 cabezas móviles Beam 230w, 4 cabezas móviles LS10, 4 cabezas móviles
-                                LM70,
-                                2 Spiders, 4 Lasers, 2 Máquinas de humo, Pantalla Gigante HD 200".
-                                <br>
-                                Toda la Iluminación es controlada a traves de un Software, el cual permite el
-                                control
-                                absoluto de las mimas, movimiento, colores, strobo, etc.
-                                <br>
-                                2 cajas JBL 2x15" + refuerzo de graves con sub de 18". Éste sistema se ajusta a el
-                                local
-                                a traves de un procesador digital de la marca dbx, utilzando un microfono de
-                                medición
-                                que se utiliza en shows profesionales, se logra una excelente <br>
-                                calidad de sonido sin importar la acústica del recinto.
-                            </td>
-                            <td>$15.000</td>
-                    </table>
-                </article>
+        <div class="div3 aimate__animated animate__flipOutX row">
+            <div class="card">
+                <img src="./img/15_años.jpg" class="card-img-top" alt="15 Años" title="Servicio Para 15 Años">
+                <div class="card-body bg-dark">
+                    <h5 class="card-title text-warning">15 Años</h5>
+                    <p class="card-text text-light">Disfrutá toda la previa porque la fiesta se va a poner buena...
+                        Tu cumpleaños de 15 es un día muy esperado por ti, por quienes te vieron crecer y por tus
+                        amigos.
+                        Sé tu misma desde el principio al fin,
+                        eres la encargada de la noche!.. <i>es tú noche</i></p>
+                    <a href="./pages/servicios.html" class="btn">VER SERVICIO</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/boda1.jpg" class="card-img-top" alt="Imágen Boda" title="Servicio Para Bodas">
+                <div class="card-body bg-dark">
+                    <h5 class="card-title text-warning">Boda</h5>
+                    <p class="card-text text-light">Ser dama de honor supone un halago, pero también algunas tareas para
+                        asistir a la novia en los preparativos de boda. Como tantas otras, es una tradición que se
+                        arrastra del pasado,
+                        sin embargo, guarda un encanto especial en su versión más ligera..</p>
+                    <a href="./pages/servicios.html" class="btn">VER SERVICIO</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/estructura_decoracion.jpg" class="card-img-top" alt="Decoración"
+                    title="Decoración Para Fiestas">
+                <div class="card-body bg-dark">
+                    <h5 class="card-title text-warning">Decoración</h5>
+                    <p class="card-text text-light">Iluminación, mantelería, vajilla, flores y mucho color. La
+                        conbinación de colores es algo llamativo, <br><br><br>
+                        hay que ser muy detallista
+                        <br><br><br>
+                    </p>
+                    <a href="./pages/servicios.html" class="btn">VER SERVICIO</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/salon_decorado.jpg" class="card-img-top" alt="Catering" title="Catering">
+                <div class="card-body bg-dark">
+                    <h5 class="card-title text-warning">Catering</h5>
+                    <p class="card-text text-light">Catering. Para Fiestas y Eventos <br>
+                        Tomamos las necesidades específicas de cada cliente y ofrecemos una solución personalizada.
+                        Solución Personalizada. Productos De Calidad. Solicita Un Presupuesto.</p>
+                    <a href="./pages/servicios.html" class="btn">VER SERVICIO</a>
+                </div>
             </div>
         </div>
     </section>
+    <!-- Eventos -->
+    <h2 class="animate__animated animate__bounce container">Opciones Discoteca</h2>
+    <section class="section4 row">
+        <div class="card">
+            <div class="card-header">
+                Opción 1
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Básico</h5>
+                <p class="card-text">Audio, Iluminación LED y <br> DJ... </p>
+                <a href="./pages/servicios.html" class="btn btn-primary">Ver Detalles</a>
+            </div>
+        </div>
+        <div class="card ">
+            <div class="card-header">
+                Opción 2
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Standar</h5>
+                <p class="card-text">Audio, Iluminación LED, Bolas Espejos y DJ...</p>
+                <a href="./pages/servicios.html" class="btn btn-primary">Ver Detalles</a>
+            </div>
+        </div>
+        <div class="card ">
+            <div class="card-header">
+                Opción 3
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Full</h5>
+                <p class="card-text">Audio HD, Iluminación LED, Pantalla Gigante y DJ...</p>
+                <a href="./pages/servicios.html" class="btn btn-primary">Ver Detalles</a>
+            </div>
+        </div>
+        <div class="card ">
+            <div class="card-header">
+                Opción 4
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Full HD</h5>
+                <p class="card-text">Audio HD + Graves, Iluminación LED Pantalla Gigante y DJ...</p>
+                <a href="./pages/servicios.html" class="btn btn-primary">Ver Detalles</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Próximos Eventos -->
+    <h2 class="animate__animated animate__bounce container">Próximos Eventos</h2>
+    <section class="section5">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Fecha</th>
+                    <th scope="col">Evento</th>
+                    <th scope="col">Salón</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>24/08/2022</td>
+                    <td>Noche De La Nostalgia</td>
+                    <td>Casa Gómez, Montevideo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>27/08/2022</td>
+                    <td>40 Años Ariel</td>
+                    <td>Tambo Viejo, Young</td>
+                </tr>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>09/09/2022</td>
+                    <td>35 Años x4</td>
+                    <td>Casa Gómez, Montevideo</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </section>
+
+    <main>
+        <div class="contenido">
+            <h3 class="h3ContenidoMain">
+                <a href="./pages/sobre_nosotros.html">Nuestra Historia</a>
+            </h3>
+            <div class="contenidoP">
+                <a href="./pages/sobre_nosotros.html">
+                    <p>|DJ CARLOS HERMIDA|
+                        <br><br>
+                        1985, Trinidad, Flores. Uruguay.
+                        Apacionado por la música comenzó a mezclar desde muy temprano. Solía escuchar los 20
+                        principales, y con un grabador viejo a <i>Cassette</i>
+                        solía grabar partes de las canciones ...
+                        </i>
+                    </p>
+                </a>
+
+            </div>
+        </div>
+        <br>
+        <a href="#section2" class="btnUp">Ir Arriba</a>
+    </main>
+
+    <section class="footer">
+        <h4>Redes Sociales</h4>
+        <div class="social">
+            <br>
+            <a href="https://facebook.com/djcarloshermida" target="_blank">
+                <img src="./img/facebook.png" alt="Logo Fabebook" title="Facebook">
+            </a>
+            <a href="https://www.twitter.com/djcarloshermida" target="_blank">
+                <img src="./img/twitter.png" alt="Logo twitter" title="Twitter">
+            </a>
+            <a href="https://youtube.com/djcarloshermida" target="_blank">
+                <img src="./img/youtube.png" alt="Logo Youtube" title="Youtube">
+            </a>
+            <a href="https://www.instagram.com/djcarloshermida" target="_blank">
+                <img src="./img/instagram.jpg" alt="Logo Instagram" title="Instagram">
+            </a>
+            <a href="https://wa.me/59891332854" target="_blank">
+                <img src="./img/whatsapp.png" alt="Logo whatsapp" title="WhatsApp">
+            </a>
+            <a href="./pages/contacto.html" target="_blank">
+                <img src="./img/email.png" alt="Logo Email" title="E-mail">
+            </a>
+        </div>
+        <br>
         <footer>
             <p>© Copyright 2022 | All Rights Reserved ®</p>
-            <a href="mailto:djcarloshermida@outlook.com" target="_blank"
-                title="Contactar Al Desarrollador"> <i>
-                    <img src="./img/logo.png" width="30px" alt="">
-                    dj carlos hermida</i> </a> 
+            <a href="mailto:djcarloshermida@outlook.com" target="_blank" title="Contactar Al Desarrollador"> <i>dj
+                    carlos hermida</i> </a>
         </footer>
     </section>
-    
-
-
-
-    <script src="js/script.js"></script>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
