@@ -50,8 +50,10 @@ do {
     if(dinero >= precio)
     {
         alert('Usted contrató el servicio ' + valor + '  ' + " " + ' con un costo de $' + precio);
-        console.log(precio);
+            console.log(precio);
         alert("Gracias por contratar nuestro servicio \n en breve nos comunicaremos contigo...");
+        let correo = prompt("introduce un correo para poder comunicarnos...");
+            console.log(correo);
     }else{
         alert("No le alcanza");
     }
