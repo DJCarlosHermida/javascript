@@ -1,0 +1,10 @@
+ $contenido: 25 ;
+
+ .contenidoP p{
+    @if ($contenido < 26) {
+        font-size: 15px;
+    } @else {
+        font-size: 12px;
+        color: black;
+    }
+ }

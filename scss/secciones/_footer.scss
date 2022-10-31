@@ -1,0 +1,51 @@
+/* REDES y FOOTER */
+.social a{
+    line-height: 30px;
+    text-align: center;
+    font-size: 10px;
+    padding: 5px;
+}
+.footer{
+    padding-bottom: 20px;
+    /* background-color: rgb(97, 13, 13); */
+    background: linear-gradient(to left, rgba(97, 13, 13, 0.733), black);
+    text-align: center;
+    color: whitesmoke;
+}
+.footer div a img{
+    width: 30px;
+    padding: 2px;
+    border-radius: 10px;
+    div{
+        padding: 15px;
+    }
+}
+
+footer a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.btn{
+    background-color: rgba(97, 13, 13, 0.733);
+    color: orange;
+}
+.btn:hover{
+    background-color: orange;
+    color: rgba(97, 13, 13, 0.733);
+}
+.btnUp{
+    position: absolute;
+    margin: 20px 20px;
+    font-style: italic;
+    text-decoration: none;
+    color: white;
+}
+.social a img:hover{
+    background-color: orange;
+}
+
+.table{
+    margin: 50px 0px;
+    background-color: rgba(97, 13, 13, 0.685);
+    width: 800px;
+}

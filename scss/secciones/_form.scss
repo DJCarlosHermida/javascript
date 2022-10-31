@@ -1,0 +1,34 @@
+/* FORMULARIO */
+.div3-form{
+     overflow: hidden;
+     padding: 50px;
+     background-color: rgba(139, 132, 132, 0.445);
+     border: 2px solid orange;
+     text-align: center;
+}
+
+input{
+    border-radius: 10px;
+    &:focus{
+        border-color: rgb(255, 166, 0);
+        color: black;
+    }
+
+
+}
+.form{
+    background-image: url(../img/auricular-black.jpg);
+    background-position: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    color: white;
+    padding: 10px;
+    textarea{
+        border-radius: 10px;
+    }
+}
+.maps{
+    width: 280px;
+    margin: 10px;
+}

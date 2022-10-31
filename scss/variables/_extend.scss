@@ -1,0 +1,8 @@
+%opDisco{
+    text-align: center;
+}
+
+/* MIXIN */
+@mixin styleBack ($textSize) {
+    text-transform: $textSize;
+}

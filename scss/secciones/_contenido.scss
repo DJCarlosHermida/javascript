@@ -1,0 +1,82 @@
+/* MAIN */
+main{
+    background-image: url(../img/fiesta1.jpg);
+    background-position: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    div a{
+        color:  whitesmoke;
+        background-color: rgba(97, 13, 13, 0.673);
+        border-radius: 10px;
+    }
+    .contenido{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenidoP{
+        font-family: sans-serif;
+        font-size: 14px;
+        word-spacing: 10px;
+        line-height: 18px;
+        width: 300px;
+        height: 200px;
+        padding: 20px;
+        margin-left: 10px;
+        border-radius: 10px;
+        border: 2px orange solid;
+        background-color: rgba(97, 13, 13, 0.672);
+        overflow: hidden;
+        color: whitesmoke;
+    }
+}
+
+.main-about{
+    background-image: url(../img/auricular-color.jpg);
+    background-position: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.style-about{
+    color: whitesmoke;
+    background-color: rgba(97, 13, 13, 0.672);
+    border-radius: 20px;
+    padding: 50px;
+}
+
+
+.contenido h3 a{
+    display: inline-block;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: 2px orange solid;
+}
+.about-div3{
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+}
+.contenidoAbout{
+    display: grid;
+    height: 600px;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+    border: 2px orange solid;
+    overflow: scroll;
+}
+.contenidoAbout img{
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+    position: sticky;
+}
+
+.div3 iframe{
+    border: 2px solid orange;
+    margin-top: 20px;
+}

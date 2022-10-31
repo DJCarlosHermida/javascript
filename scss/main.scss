@@ -1,0 +1,258 @@
+/* Class Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/*PARTIAL*/ 
+@import './variables/colores';
+@import './variables/fuentes';
+@import './variables/conficionales';
+@import './variables/extend';
+@import './secciones/header';
+@import './secciones/section1';
+@import './secciones/section2';
+@import './secciones/section3';
+@import './secciones/footer';
+@import './secciones/contenido';
+@import './secciones/form';
+@import './media-querys/querrys';
+
+
+html{
+    scroll-behavior: smooth;
+}
+/*SASS*/
+
+.banner{
+    height: 400px;
+    width: 100%;
+}
+ul{
+    animation-duration: 1s;
+    animation-name: menuSubir;
+}
+@keyframes menuSubir{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/* EXTEND & MIXIN */ 
+.card{
+    @extend %opDisco;
+}
+.section4{
+    @extend %opDisco;
+    @include styleBack (uppercase);
+    .card{
+        box-shadow: 10px 5px 5px 0px rgba(97, 13, 13, 0.733);
+    }
+}
+
+
+/* Menú Desplegable */
+ul li:hover ul{
+    display: block;
+    transition: 3s;
+}
+ul ul{
+    position: absolute;
+    display: none;
+}
+ul ul li{
+    display: block;
+}
+/*& con el NESTING*/
+.logo{
+    width: 50px;
+    margin-left: 50px;
+    display: inline-block;
+    &:hover{
+        transform: scale(1.2);
+        transition: .3s;
+    }
+}
+
+/* nav*/
+.nav-link:hover{
+    color: orange;
+}
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+strong{
+    font-size: 48px;
+    width: 10px;
+    background-color: rgba(0, 0, 0, 0.534);
+    border-radius: 30px;
+    padding: 10px;
+}
+h2,h3,h4{
+    text-align: center;
+    // color: rgb(216, 146, 42);
+    color: $colorh2;
+    background-color: rgba(97, 13, 13, 0.733);
+    border-radius: 10px;
+    animation-name: h2chanage;
+    animation-duration: 2s;
+    animation-delay: 0s;
+}
+.h4-about{
+    color: whitesmoke;
+}
+
+.nav-item a{
+    color: whitesmoke;
+    margin-left: 10px;
+    font-size: 16px;
+    text-decoration: none;
+}
+a:hover{
+    color: orange;
+} 
+nav:hover{
+    color: orange;
+}
+
+.servicio1{
+    display: inline-block;
+    width: 200px;
+    background-color: rgba(97, 13, 13, 0.733);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    display: flexbox;
+
+}
+article{
+    
+    img{
+        border-radius: 20px;
+        width: 150px;
+} 
+}
+
+/* Section 3 */
+/*SASS*/
+.section3{
+    display: grid;
+    background-image: url(../img/auricular-black.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: space-around;
+    .div3{
+        overflow: hidden;
+        padding: 15px;
+        background: linear-gradient(to bottom, whitesmoke, rgba(80, 78, 78, 0.445));
+        border: 2px solid orange;
+        text-align: center;
+        animation-duration: 3s;
+        animation-name: subir;
+    }
+    @keyframes subir{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+}
+.card{
+    width: 18rem;
+}
+.card-header{
+    background-color: rgba(97, 13, 13, 0.733);
+    color: orange;
+}
+.card-text{
+    font-family: $font1;
+}
+
+.about-div3{
+    overflow: hidden;
+    padding: 15px;
+    background-color: rgba(139, 132, 132, 0.445);
+    border: 2px solid orange;
+    text-align: center;
+}
+
+/* Section 4 */
+.section4{
+    width: 100%;
+    padding: 50px;
+    background-image: url(../img/auricular-color.jpg);
+    justify-content: space-between;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* EVENTOS */
+.event{
+    text-align: center;
+}
+ .event1{
+     width: 250px;
+     background-color: rgba(97, 13, 13, 0.404);
+     color: whitesmoke;
+     display: inline-block;
+     border: 1px solid orange;
+     padding: 10px;
+     border-radius: 20px;
+     margin: 10px;
+   display: flexbox;
+     flex-direction: row;
+ }
+ .event1:hover{
+     background-color: rgba(255, 166, 0, 0.663);
+     color: black;
+ }
+/* SOBRE NOSOTROS */
+.about_us{
+    width: 450px;
+    text-align: center;
+    margin-left: 38%;
+    font-size: 20px;
+}
+/* Section 5 */
+/*SASS*/
+.section5{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: 0px;
+    background-repeat: no-repeat;
+    background: linear-gradient(to top, rgba(97, 13, 13, 0.864), black);
+    table{
+        justify-items: center;
+    }
+    th{
+        background-color: gray;
+        color: whitesmoke;
+        animation-duration: 3s;
+        animation-name: flash;
+        animation-delay: 4s;
+    }
+    td{
+        background-color: gray;
+        color: whitesmoke;
+    }
+    td:hover{
+        color: orange;
+        background-color: rgba(97, 13, 13, 0.864);
+    }
+}
