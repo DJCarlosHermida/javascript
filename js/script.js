@@ -1,5 +1,7 @@
+//CONDICIONAL
+
 console.log('Primer entrega - Proyecto JavaScript - Simulador');
-alert("Bienvenido a PARAFIESTAS!");
+alert("Bienvenido a |PARAFIESTAS|");
 alert("Para continuar es necesario ingresar algunos datos");
 let nombre, edad;
     nombre = prompt("Introduce tu nombre");
@@ -57,3 +59,15 @@ do {
 }else{
     alert("Debe ser mayor para poder comprar");
 }
+
+//Funciones
+let Años = 2022 - edad;
+const saludarUsuario = (nombre, edad, correo) =>{
+    console.log('Hola '+ nombre + ' le recordamos que en el año ' + Años + ' se formó la banda Guns N Roses');
+}
+saludarUsuario(nombre, edad);
+if (edad = 37) {
+    alert('Hola '+ nombre + ' le recordamos que en el año ' + Años + ' se formó la banda Guns N Roses');
+}
+
+
