@@ -1,6 +1,8 @@
+//Primera Entrega
 //CONDICIONAL
 
 console.log('Primer entrega - Proyecto JavaScript - Simulador');
+
 alert("Bienvenido a |PARAFIESTAS|");
 alert("Para continuar es necesario ingresar algunos datos");
 let nombre, edad;
@@ -8,6 +10,9 @@ let nombre, edad;
         console.log("Nombre: " + nombre);
     edad = prompt("introduce tu edad \n debes tener al menos 18 años para continuar");
         console.log("Edad: " + edad);
+let año = 2022 - edad
+        console.log("Año Nacimiento: "+ año);
+
 document.write(nombre +" "+ edad);
 if(edad > 17)
 {
@@ -16,6 +21,7 @@ if(edad > 17)
     let valor;
     let acepta;
 let dinero = prompt("introduce el dinero que tienes disponible para realizar la compra");
+    console.log("Dinero Disponbinle : " + dinero)
 do {
      valor = prompt('Selecciona un servicio \n 1- Básico  $5500 \n2- Standar   $7500\n3- Full   $10000\n4- Full HD   $15000');
      switch (valor) {
@@ -41,15 +47,14 @@ do {
              break;
          
          default:
-             alert('Debe seleccionar una opción para continuar');
-             break;
+             alert('Debe seleccionar una opción para poder comprar');
      }
  } while (valor == null);
     if(dinero >= precio)
     {
-        alert('Usted contrató el servicio ' + valor + '  ' + " " + ' con un costo de $' + precio);
-            console.log(precio);
-        alert("Gracias por contratar nuestro servicio \n en breve nos comunicaremos contigo...");
+        alert('Usted contrató el servicio ' + valor + " " + ' con un costo de $' + precio );
+            console.log('Has contratado el servicio: ' + valor + ' con un costo de $' + precio + " , te sobró $ " + (dinero - precio));
+        alert("Gracias por confiar en nosotros \n en breve nos comunicaremos contigo...");
         let correo = prompt("introduce un correo para poder comunicarnos...");
             console.log(correo);
     }else{
@@ -59,15 +64,10 @@ do {
 }else{
     alert("Debe ser mayor para poder comprar");
 }
+alert("Muchas gracias por elegir nuestro servicio. \nA continuación mostraremos más detalles del mismo...");
+console.log("Muchas gracias por elegir nuestro servicio. \nA continuación te mostraremos más detalles del mismo...");
 
+//Segunda entrega
 //Funciones
-let Años = 2022 - edad;
-const saludarUsuario = (nombre, edad, correo) =>{
-    console.log('Hola '+ nombre + ' le recordamos que en el año ' + Años + ' se formó la banda Guns N Roses');
-}
-saludarUsuario(nombre, edad);
-if (edad = 37) {
-    alert('Hola '+ nombre + ' le recordamos que en el año ' + Años + ' se formó la banda Guns N Roses');
-}
 
-
+console.log('Segunda entrega - Proyecto JavaScript - Simulador + Funciones + Objetos + Arrays');
