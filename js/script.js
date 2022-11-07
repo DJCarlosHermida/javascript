@@ -6,7 +6,7 @@ console.log('Primer entrega - Proyecto JavaScript - Simulador');
 alert("Bienvenido a |PARAFIESTAS|");
 alert("Para continuar es necesario ingresar algunos datos");
 let nombre, edad;
-    nombre = prompt("Introduce tu nombre");
+    nombre = prompt("Introduce tu nombre").toLowerCase();
         console.log("Nombre: " + nombre);
     edad = parseInt(prompt("introduce tu edad \n debes tener al menos 18 años para continuar"));
         console.log("Edad: " + edad);
@@ -77,7 +77,6 @@ do {
 
 
 //Segunda entrega
-//Funciones
 
 console.log('Segunda entrega - Proyecto JavaScript - Simulador + Funciones + Objetos + Arrays');
 
@@ -90,8 +89,6 @@ function Usuario(nombre, anio) {
 }
 Usuario("Tu usuario es: " + nombre + anio);
 
-alert("A continuación te mostratemos más sobre nosotros...");
- 
 const perfil = {
     nombrePerfil: nombre,
     edadPerfil: edad,
@@ -99,64 +96,81 @@ const perfil = {
 };
 console.log(perfil);
 
-/*
-perfil.nombrePerfil = prompt("Nuevo Nombre");
-console.log(perfil);
-*/
-
 perfil.email= correo;
+console.log("Agregamos el correo al perfil");
 console.log(perfil);
+alert("Agregamos " + correo + " al perfil");
 
-//Función Constructora
-/*
-function Bandas(nombre, anio, pais) {
-    this.nombre = nombre;
-    this.anio = anio;
-    this.pais = pais;
-    //this.mostrarAnio = function(){console.log(this.anio)};
-}
-*/
+const listaBandas = [
+    {anio: 1960, nombre: "Los Beatles"},
+    {anio: 1961, nombre: "The Beach Boys"},
+    {anio: 1962, nombre: "The Rolling Stones"},
+    {anio: 1963, nombre: "Los Shakers"},
+    {anio: 1964, nombre: "Pink Floyd"},
+    {anio: 1965, nombre: "The Who"},
+    {anio: 1966, nombre: "The Bar-Kays"},
+    {anio: 1967, nombre: "Creedence"},
+    {anio: 1968, nombre: "Led Zeppellin"},
+    {anio: 1969, nombre: "Mountain"},
+    {anio: 1970, nombre: "Quenn"},
+    {anio: 1971, nombre: "Eagles"},
+    {anio: 1972, nombre: "Abba"},
+    {anio: 1973, nombre: "ACDC"},
+    {anio: 1974, nombre: "Ramones"},
+    {anio: 1975, nombre: "Air Supply"},
+    {anio: 1976, nombre: "U2"},
+    {anio: 1977, nombre: "Village People"},
+    {anio: 1978, nombre: "Whitesnake"},
+    {anio: 1979, nombre: "Europe"},
+    {anio: 1980, nombre: "Depeche Mode"},
+    {anio: 1981, nombre: "Pet Shop Boys"},
+    {anio: 1982, nombre: "Soda Stereo"},
+    {anio: 1983, nombre: "Bon Jovi"},
+    {anio: 1984, nombre: "The Connells"},
+    {anio: 1985, nombre: "Guns N Roses"},
+    {anio: 1986, nombre: "Mana"},
+    {anio: 1987, nombre: "Nirvana"},
+    {anio: 1988, nombre: "Divididos"},
+    {anio: 1989, nombre: "The Cranberries"},
+    {anio: 1990, nombre: "Pearl Jam"},
+    {anio: 1991, nombre: "Oasis"},
+    {anio: 1992, nombre: "Hanson"},
+    {anio: 1993, nombre: "Korn"},
+    {anio: 1994, nombre: "Foo Fighters"},
+    {anio: 1995, nombre: "La Vela Puerca"},
+    {anio: 1996, nombre: "Nightwish"},
+    {anio: 1997, nombre: "Five"},
+    {anio: 1998, nombre: "Gorillaz"},
+    {anio: 1999, nombre: "The Sounds"},
+    {anio: 2000, nombre: "Linkin Park"},
+    {anio: 2001, nombre: "Fall Out Boy"},
+    {anio: 2002, nombre: "RED"},
+    {anio: 2003, nombre: "Red Hot Chilli Peppers"},
+    {anio: 2004, nombre: "The Rasmus"}];
 
-
-//Función Literal
-
-const BandasLiteral = {
-    nombre : 'The Beach Boys',
-    anio : 1961,
-    pais : 'EEUU'
-}
-
-
-//CLASES
-
-class Bandas {
-    constructor(nombre, anio, pais){
-        this.nombre = nombre;
-        this.anio = anio;
-        this.pais = pais;
-    } 
-    bandaRock(){
-        console.log(this.nombre);
+for (const item of listaBandas) {
+    
+    if (item.anio == anio) {
+        console.log(nombre.toUpperCase() + " te recordamos que en el año " + anio + " se creó la banda "+ item.nombre);
+        alert(nombre.toUpperCase() + " te recordamos que en el año " + anio + " se creó la banda "+ item.nombre);
     }
+};
+console.log(listaBandas.length + " bandas");
+
+console.log("Aquí hay una lista de bandas de Rock, desde 1960 hasta 2004");
+alert("Aquí hay una lista de bandas de Rock, desde 1960 hasta 2004");
+for (let i = 0; i < listaBandas.length; i++){
+    console.log(listaBandas[i]);
 }
+alert("Qué banda de rock agregarías?")
+let agregarBanda = prompt("Nombre banda a agregar");
+console.log(listaBandas.length + " bandas en lista");
+listaBandas.push(agregarBanda);
+console.log("se agregó " + agregarBanda + " a la lista");
+console.log("Lista actualizada " + listaBandas.length + " bandas");
 
-const bandas1 = new Bandas("Los Beatles", 1960, "Inglaterra");
-const bandas2 = new Bandas("The Beach Boys", 1961, "Inglaterra"); 
-const bandas3 = new Bandas("The Rolling Stones", 1962, "Inglaterra");
-const bandas4 = new Bandas("Los Shakers", 1963, "Inglaterra");
+alert("La lista está completa, no se pudo agregar");
+console.log("La lista está completa, no se pudo agregar");
+listaBandas.pop();
+console.log(listaBandas.length + " bandas");
 
-console.log(bandas1);
-console.log(bandas2);
-console.log(bandas3);
-console.log(bandas4);
-
-console.log("modelo" in bandas1);
-console.log("anio" in bandas3);
-
-for (const datos in bandas4){
-    console.log(bandas4[datos]);
-}
-
-Bandas = [bandas1, bandas2, bandas3, bandas4];
-
-console.log(Bandas[prompt("introduce valor entre 0 y 3")]);
