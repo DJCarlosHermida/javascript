@@ -8,19 +8,21 @@ alert("Para continuar es necesario ingresar algunos datos");
 let nombre, edad;
     nombre = prompt("Introduce tu nombre");
         console.log("Nombre: " + nombre);
-    edad = prompt("introduce tu edad \n debes tener al menos 18 años para continuar");
+    edad = parseInt(prompt("introduce tu edad \n debes tener al menos 18 años para continuar"));
         console.log("Edad: " + edad);
-let año = 2022 - edad
-        console.log("Año Nacimiento: "+ año);
-
+let anio = 2022 - edad
+        console.log("Año Nacimiento: "+ anio);
+let correo = prompt("introduce tu correo");
+    console.log("Correo: " + correo);
+    
 document.write(nombre +" "+ edad);
 if(edad > 17)
 {
-    let opciones;
+    //let opciones;
     let precio;
     let valor;
-    let acepta;
-let dinero = prompt("introduce el dinero que tienes disponible para realizar la compra");
+    //let acepta;
+let dinero = prompt("introduce el dinero que tienes disponible para realizar la compra"); 
     console.log("Dinero Disponbinle : " + dinero)
 do {
      valor = prompt('Selecciona un servicio \n 1- Básico  $5500 \n2- Standar   $7500\n3- Full   $10000\n4- Full HD   $15000');
@@ -55,19 +57,106 @@ do {
         alert('Usted contrató el servicio ' + valor + " " + ' con un costo de $' + precio );
             console.log('Has contratado el servicio: ' + valor + ' con un costo de $' + precio + " , te sobró $ " + (dinero - precio));
         alert("Gracias por confiar en nosotros \n en breve nos comunicaremos contigo...");
-        let correo = prompt("introduce un correo para poder comunicarnos...");
-            console.log(correo);
+        let confirmaCorreo = prompt("Confirma tu correo");
+        console.log("Verificar Correo: " + confirmaCorreo);
+        do {
+            if (correo = confirmaCorreo) {
+                alert("Correo confirmado")
+                console.log("Correo COnfirmado");
+                break;
+            }
+        } while (correo != confirmaCorreo);
+        console.log("Muchas gracias " + nombre + " por elegir nuestro servicio. \nA continuación te mostraremos más detalles del mismo...");
     }else{
         alert("No le alcanza");
     }
      
 }else{
-    alert("Debe ser mayor para poder comprar");
+    alert("Debe ser mayor para poder comprar.");
 }
-alert("Muchas gracias por elegir nuestro servicio. \nA continuación mostraremos más detalles del mismo...");
-console.log("Muchas gracias por elegir nuestro servicio. \nA continuación te mostraremos más detalles del mismo...");
+
 
 //Segunda entrega
 //Funciones
 
 console.log('Segunda entrega - Proyecto JavaScript - Simulador + Funciones + Objetos + Arrays');
+
+let usuario = nombre + anio;
+    alert("Usuario: " + usuario);
+
+function Usuario(nombre, anio) {
+    console.log("se generó el usuario");
+    console.log("Usuario: "+ usuario);
+}
+Usuario("Tu usuario es: " + nombre + anio);
+
+alert("A continuación te mostratemos más sobre nosotros...");
+ 
+const perfil = {
+    nombrePerfil: nombre,
+    edadPerfil: edad,
+    anioPerfil: anio
+};
+console.log(perfil);
+
+/*
+perfil.nombrePerfil = prompt("Nuevo Nombre");
+console.log(perfil);
+*/
+
+perfil.email= correo;
+console.log(perfil);
+
+//Función Constructora
+/*
+function Bandas(nombre, anio, pais) {
+    this.nombre = nombre;
+    this.anio = anio;
+    this.pais = pais;
+    //this.mostrarAnio = function(){console.log(this.anio)};
+}
+*/
+
+
+//Función Literal
+
+const BandasLiteral = {
+    nombre : 'The Beach Boys',
+    anio : 1961,
+    pais : 'EEUU'
+}
+
+
+//CLASES
+
+class Bandas {
+    constructor(nombre, anio, pais){
+        this.nombre = nombre;
+        this.anio = anio;
+        this.pais = pais;
+    } 
+    bandaRock(){
+        console.log(this.nombre);
+    }
+}
+
+const bandas1 = new Bandas("Los Beatles", 1960, "Inglaterra");
+const bandas2 = new Bandas("The Beach Boys", 1961, "Inglaterra"); 
+const bandas3 = new Bandas("The Rolling Stones", 1962, "Inglaterra");
+const bandas4 = new Bandas("Los Shakers", 1963, "Inglaterra");
+
+console.log(bandas1);
+console.log(bandas2);
+console.log(bandas3);
+console.log(bandas4);
+
+console.log("modelo" in bandas1);
+console.log("anio" in bandas3);
+
+for (const datos in bandas4){
+    console.log(bandas4[datos]);
+}
+
+Bandas = [bandas1, bandas2, bandas3, bandas4];
+
+console.log(Bandas[prompt("introduce valor entre 0 y 3")]);
