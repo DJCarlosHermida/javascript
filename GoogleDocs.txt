@@ -1,42 +1,55 @@
 Proyecto |Para Fiestas| - Coder House
 |Desarrollo Web|
 
-Primeramente el nombre de la página lo elegí por tema de SEO, cuando la gente busca discoteca para fiestas, dj para fiestas, música para fiestas, iluminación para fiestas. Todo lo que lleve para fiestas va a ser una palabra clave, que a su vez está contenida en el domino. “próximamente”. https://parafiestas.com.uy
+Primeramente el nombre de la página lo elegí por tema de SEO,
+ cuando la gente busca discoteca para fiestas, dj para fiestas, música para fiestas, iluminación para fiestas. 
+Todo lo que lleve para fiestas va a ser una palabra clave, que a su vez está contenida en el domino. “próximamente”. 
+https://parafiestas.com.uy
+
 Meta Keywords y description
+
 Index
+
 <meta name="keywords" content="servicio, discoteca, iluminación, dj, fiestas">
-    <meta name="description" content="Servicio integral Para Fiestas y eventos de todo tipo. Salones Para Fiestas Decoración Para Fiestas Discoteca Para Fiestas todo para fiestas...">
+<meta name="description" content="Servicio integral Para Fiestas y eventos de todo tipo. Salones Para Fiestas Decoración Para Fiestas Discoteca Para Fiestas todo para fiestas...">
 
 Sobre Nosotros
+
 <meta name="keywords" content="hisotria, servicios, experiencia, trayectoria, calidad">
-    <meta name="description" content="DJCARLOSHERMIDA + de 15 años de experiencia en todo tipo de fiestas, eventos...">
+<meta name="description" content="DJCARLOSHERMIDA + de 15 años de experiencia en todo tipo de fiestas, eventos...">
 
 Servicios
+
 <meta name="keywords" content="Fiestas de 15, Casamientos, Iluminación, Sonido, Musicalización">
-    <meta name="description" content="DJCarlos Hermida |Para Fiestas| servicios de audio e iluminación para cumpleaños de 15, casamientos, despedidas, desfiles, boliches, amplificaciones, etc">
+<meta name="description" content="DJCarlos Hermida |Para Fiestas| servicios de audio e iluminación para cumpleaños de 15, casamientos, despedidas, desfiles, boliches, amplificaciones, etc">
 
 Galería
+
 <meta name="keywords" content="Galería, Fotos, Videos, Imágenes, Música">
-    <meta name="description" content="DJCARLOSHERMIDA |Para Fiestas| Galería de fotos y videos de Cumpleaños de 15, casamientos, despedidas. amplificaciones">
+<meta name="description" content="DJCARLOSHERMIDA |Para Fiestas| Galería de fotos y videos de Cumpleaños de 15, casamientos, despedidas. amplificaciones">
 
 Contacto
+
 <meta name="keywords" content="Contacto, Redes, Teléfono, formulario, email">
-    <meta name="description" content="djcarloshermida |Para Fiestas| Ante cualquier duda o consulta póngase en contacto... djcarloshermida@outlook.com">
+<meta name="description" content="djcarloshermida |Para Fiestas| Ante cualquier duda o consulta póngase en contacto... djcarloshermida@outlook.com">
 
 
 CSS
-A partir de la primera hoja de estilos, se hizo un backup para no perder los cambios al agregar “SCSS”. Se actualizó y mejoró le código.
+
+A partir de la primera hoja de estilos, se hizo un backup para no perder los cambios al agregar “SCSS”. 
+Se actualizó y mejoró le código.
 Variables (extend, condicionales, mixin) – Media Querry – Secciones (separamos el código en secciones)
 Quitamos del seguimiento la carpeta node_modules creando .gitignore.
-El tema del contenido y distribución del mismo, se utilizó parte de bootstrap para acomodar y hacer responsive la página. Grid, flex. Tablas.
-También tiene JavaScript con efectos vistosos.
-Saluda atte.
+El tema del contenido y distribución del mismo, 
+	se utilizó parte de bootstrap para acomodar y hacer responsive la página. Grid, flex. Tablas.
+También contiene efectos vistosos con JavaScript.
 
 |Javascript|
 Con js aplicaremos los conceptos de variables, control de flujos, ciclos e iteraciones
 Funciones, Objetos, Arrays. Manipularemos el DOM. Aplicaremos Eventos
-Storage & JSON, workshop
-incluidemos Librerías (ejemplo JQuery, ajax & Fetch,
+Storage & JSON, workshop. 
+Veremos operadores avanzados, agregaremos librerías, asincronía y promesas, Ayax & Fetch
+incluidemos Librerías (ejemplo JQuery, ajax & Fetch, framework & NodeJS
 Framework (la idea es acomodar todo para continuar el proyecto con React y Mongo db) & Node Js.
 
 

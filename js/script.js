@@ -2,9 +2,10 @@
 //CONDICIONAL
 
 console.log('Primer entrega - Proyecto JavaScript - Simulador');
-
+/*
 alert("Bienvenido a |PARAFIESTAS|");
 alert("Para continuar es necesario ingresar algunos datos");
+*/
 let nombre, edad;
     nombre = prompt("Introduce tu nombre").toLowerCase();
         console.log("Nombre: " + nombre);
@@ -102,6 +103,17 @@ console.log(perfil);
 alert("Agregamos " + correo + " al perfil");
 
 const listaBandas = [
+    {anio: 1949, nombre: "Bill Haley & His Comets"},
+    {anio: 1950, nombre: "Los TNT"},
+    {anio: 1951, nombre: "Jackie Brenston"},
+    {anio: 1952, nombre: "Alan Freed"},
+    {anio: 1953, nombre: "Elvis Presley"},
+    {anio: 1954, nombre: "The Spinners"},
+    {anio: 1955, nombre: "The Tokens"},
+    {anio: 1956, nombre: "Chuck Berry"},
+    {anio: 1957, nombre: "The Crickets"},
+    {anio: 1958, nombre: "Bee Gees"},
+    {anio: 1959, nombre: "The Kingsmen"},
     {anio: 1960, nombre: "Los Beatles"},
     {anio: 1961, nombre: "The Beach Boys"},
     {anio: 1962, nombre: "The Rolling Stones"},
@@ -152,25 +164,59 @@ for (const item of listaBandas) {
     
     if (item.anio == anio) {
         console.log(nombre.toUpperCase() + " te recordamos que en el año " + anio + " se creó la banda "+ item.nombre);
-        alert(nombre.toUpperCase() + " te recordamos que en el año " + anio + " se creó la banda "+ item.nombre);
+        //alert(nombre.toUpperCase() + " te recordamos que en el año " + anio + " se creó la banda "+ item.nombre);
     }
 };
 console.log(listaBandas.length + " bandas");
 
 console.log("Aquí hay una lista de bandas de Rock, desde 1960 hasta 2004");
-alert("Aquí hay una lista de bandas de Rock, desde 1960 hasta 2004");
+//alert("Aquí hay una lista de bandas de Rock, desde 1960 hasta 2004");
 for (let i = 0; i < listaBandas.length; i++){
     console.log(listaBandas[i]);
 }
-alert("Qué banda de rock agregarías?")
+//alert("Qué banda de rock agregarías?")
 let agregarBanda = prompt("Nombre banda a agregar");
 console.log(listaBandas.length + " bandas en lista");
 listaBandas.push(agregarBanda);
 console.log("se agregó " + agregarBanda + " a la lista");
 console.log("Lista actualizada " + listaBandas.length + " bandas");
 
-alert("La lista está completa, no se pudo agregar");
+//alert("La lista está completa, no se pudo agregar");
 console.log("La lista está completa, no se pudo agregar");
 listaBandas.pop();
 console.log(listaBandas.length + " bandas");
 
+
+
+
+
+
+
+
+
+
+
+//STORAGE & JSON
+/*
+const loginButton = document.querySelector('#login');
+const logoutButton = document.querySelector('#logout');
+
+const logUser = () => {
+    const nombreUsuarioStorage = localStorage.getItem('nombreUsuario')
+    //null = false
+    //valor = true
+    if(nombreUsuarioStorage){
+        console.log(`Bienvenido ${nombreUsuarioStorage}`);
+    }else{
+        const nombreUsuario = prompt('Ingrese Su Nombre');
+        localStorage.setItem('nombreUsuario', nombreUsuario);
+        console.log(`Bienvenido ${nombreUsuario}`);
+    }
+}
+const logoutUser = () => {
+    console.log('Saludos');
+    localStorage.removeItem('nombreUsuario');
+}
+loginButton.addEventListener('click', logUser);
+logoutButton.addEventListener('click', logoutUser);
+*/
