@@ -5,16 +5,16 @@ console.log('Primer entrega - Proyecto JavaScript - Simulador');
 /*
 alert("Bienvenido a |PARAFIESTAS|");
 alert("Para continuar es necesario ingresar algunos datos");
-*/
 let nombre, edad;
-    nombre = prompt("Introduce tu nombre").toLowerCase();
-        console.log("Nombre: " + nombre);
-    edad = parseInt(prompt("introduce tu edad \n debes tener al menos 18 años para continuar"));
-        console.log("Edad: " + edad);
+nombre = prompt("Introduce tu nombre").toLowerCase();
+console.log("Nombre: " + nombre);
+edad = parseInt(prompt("introduce tu edad \n debes tener al menos 18 años para continuar"));
+console.log("Edad: " + edad);
 let anio = 2022 - edad
-        console.log("Año Nacimiento: "+ anio);
+console.log("Año Nacimiento: "+ anio);
 let correo = prompt("introduce tu correo");
-    console.log("Correo: " + correo);
+console.log("Correo: " + correo);
+
     
 document.write(nombre +" "+ edad);
 if(edad > 17)
@@ -75,12 +75,12 @@ do {
 }else{
     alert("Debe ser mayor para poder comprar.");
 }
-
+*/
 
 //Segunda entrega
 
 console.log('Segunda entrega - Proyecto JavaScript - Simulador + Funciones + Objetos + Arrays');
-
+/*
 let usuario = nombre + anio;
     alert("Usuario: " + usuario);
 
@@ -185,11 +185,29 @@ console.log("Lista actualizada " + listaBandas.length + " bandas");
 console.log("La lista está completa, no se pudo agregar");
 listaBandas.pop();
 console.log(listaBandas.length + " bandas");
+*/
+console.log('Tercera entrega - Proyecto JavaScript - DOM + Eventos + Storage & JSON + Workshop');
+console.log("DOM")
+
+//  Acceder al DOM mediante ID
 
 
 
+// INDEX
 
+// SERVICIOS
 
+const h1Servicios = document.getElementById('h1Servicios')
+console.log(h1Servicios);
+
+const cards = document.getElementsByClassName('card')
+console.log(cards);
+
+// SOBRE NOSOTROS
+
+// GALERÍA
+
+// CONTACTO
 
 
 
