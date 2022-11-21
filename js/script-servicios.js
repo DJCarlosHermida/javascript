@@ -1,13 +1,33 @@
+// Variables
+
+// Selectores
+const h2Servicios = document.getElementById('h2Servicios')
+const cardContainer = document.querySelector('#cardContainer')
+const buttons = document.querySelectorAll('.btnConsultar')
+
+// Funciones
+ 
+
+// Listeners
+
 console.log('Tercera entrega - Proyecto JavaScript - DOM + Eventos + Storage & JSON + Workshop');
 console.log("DOM + Eventos + Storage + Workshop")
-
-// SERVICIOS
-
-const h2Servicios = document.getElementById('h2Servicios')
-    h2Servicios.innerHTML = '<h2> Opciones Discoteca </h2>'
 console.log(h2Servicios);
 
-const cardContainer = document.querySelector('#cardContainer')
+buttons.forEach((button) =>{
+    button.addEventListener('click', (e) => {
+        console.log(e.target);
+    })
+})
+
+// DOM
+
+ 
+    h2Servicios.innerHTML = '<h2> Opciones Discoteca </h2>'
+
+
+
+// Ejecuciones
 
 productos.forEach((producto) => {
     const newCard = document.createElement('div')
@@ -17,16 +37,18 @@ productos.forEach((producto) => {
                         <img src="${producto.img}" class="cardImg">
                         <p class="cardDesc">${producto.titulo}</p>
                         <span class="cardPrice"> $${producto.precio}</span>
-                        <button class="buttonCTA"> Consultar </button>
+                        <button id="btnConsultar" class="button"> Consultar </button>
                         `
                         cardContainer.append(newCard);
 })
 console.log(productos)
 
+// EVENTOS
 
 
 
 
+ 
 
 
 

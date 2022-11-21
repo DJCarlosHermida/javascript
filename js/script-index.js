@@ -190,42 +190,11 @@ const h2Index = document.getElementById('h2Index')
 console.log(h2Index);
 
 
-// SERVICIOS
+// EVENTOS 
 
+const searchBar = document.querySelector('#searchBar')
+const searchButton = document.querySelector('#searchButton')
 
-
-// SOBRE NOSOTROS
-
-// GALERÍA
-
-// CONTACTO
-
-
-
-
-
-
-//STORAGE & JSON
-/*
-const loginButton = document.querySelector('#login');
-const logoutButton = document.querySelector('#logout');
-
-const logUser = () => {
-    const nombreUsuarioStorage = localStorage.getItem('nombreUsuario')
-    //null = false
-    //valor = true
-    if(nombreUsuarioStorage){
-        console.log(`Bienvenido ${nombreUsuarioStorage}`);
-    }else{
-        const nombreUsuario = prompt('Ingrese Su Nombre');
-        localStorage.setItem('nombreUsuario', nombreUsuario);
-        console.log(`Bienvenido ${nombreUsuario}`);
-    }
-}
-const logoutUser = () => {
-    console.log('Saludos');
-    localStorage.removeItem('nombreUsuario');
-}
-loginButton.addEventListener('click', logUser);
-logoutButton.addEventListener('click', logoutUser);
-*/
+searchButton.addEventListener('click', () => {
+    console.log('Buscó ' + searchBar.value);
+})
