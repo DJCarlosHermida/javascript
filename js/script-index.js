@@ -3,17 +3,7 @@
 
 console.log('Primer entrega - Proyecto JavaScript - Simulador');
 /*
-alert("Bienvenido a |PARAFIESTAS|");
-alert("Para continuar es necesario ingresar algunos datos");
-let nombre, edad;
-nombre = prompt("Introduce tu nombre").toLowerCase();
-console.log("Nombre: " + nombre);
-edad = parseInt(prompt("introduce tu edad \n debes tener al menos 18 años para continuar"));
-console.log("Edad: " + edad);
-let anio = 2022 - edad
-console.log("Año Nacimiento: "+ anio);
-let correo = prompt("introduce tu correo");
-console.log("Correo: " + correo);
+
 
     
 document.write(nombre +" "+ edad);
@@ -195,13 +185,14 @@ console.log("DOM")
 
 // INDEX
 
+const h2Index = document.getElementById('h2Index')
+    h2Index.innerHTML = '<h2> Servicios | Para Fiestas |';
+console.log(h2Index);
+
+
 // SERVICIOS
 
-const h1Servicios = document.getElementById('h1Servicios')
-console.log(h1Servicios);
 
-const cards = document.getElementsByClassName('card')
-console.log(cards);
 
 // SOBRE NOSOTROS
 
