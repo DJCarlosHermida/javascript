@@ -543,10 +543,12 @@ article img {
   background-image: url(../img/auricular-black.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  justify-content: space-around; }
+  justify-content: space-around;
+ }
   .section3 .div3 {
     overflow: hidden;
     padding: 15px;
+    
     background: linear-gradient(to bottom, whitesmoke, rgba(80, 78, 78, 0.445));
     border: 2px solid orange;
     text-align: center;

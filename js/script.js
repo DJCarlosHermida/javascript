@@ -1,8 +1,8 @@
 //Primera Entrega
 //CONDICIONAL
 
-console.log('Primer entrega - Proyecto JavaScript - Simulador');
 /*
+console.log('Primer entrega - Proyecto JavaScript - Simulador');
 
 
     
@@ -69,8 +69,8 @@ do {
 
 //Segunda entrega
 
-console.log('Segunda entrega - Proyecto JavaScript - Simulador + Funciones + Objetos + Arrays');
 /*
+console.log('Segunda entrega - Proyecto JavaScript - Simulador + Funciones + Objetos + Arrays');
 let usuario = nombre + anio;
     alert("Usuario: " + usuario);
 
@@ -92,63 +92,6 @@ console.log("Agregamos el correo al perfil");
 console.log(perfil);
 alert("Agregamos " + correo + " al perfil");
 
-const listaBandas = [
-    {anio: 1949, nombre: "Bill Haley & His Comets"},
-    {anio: 1950, nombre: "Los TNT"},
-    {anio: 1951, nombre: "Jackie Brenston"},
-    {anio: 1952, nombre: "Alan Freed"},
-    {anio: 1953, nombre: "Elvis Presley"},
-    {anio: 1954, nombre: "The Spinners"},
-    {anio: 1955, nombre: "The Tokens"},
-    {anio: 1956, nombre: "Chuck Berry"},
-    {anio: 1957, nombre: "The Crickets"},
-    {anio: 1958, nombre: "Bee Gees"},
-    {anio: 1959, nombre: "The Kingsmen"},
-    {anio: 1960, nombre: "Los Beatles"},
-    {anio: 1961, nombre: "The Beach Boys"},
-    {anio: 1962, nombre: "The Rolling Stones"},
-    {anio: 1963, nombre: "Los Shakers"},
-    {anio: 1964, nombre: "Pink Floyd"},
-    {anio: 1965, nombre: "The Who"},
-    {anio: 1966, nombre: "The Bar-Kays"},
-    {anio: 1967, nombre: "Creedence"},
-    {anio: 1968, nombre: "Led Zeppellin"},
-    {anio: 1969, nombre: "Mountain"},
-    {anio: 1970, nombre: "Quenn"},
-    {anio: 1971, nombre: "Eagles"},
-    {anio: 1972, nombre: "Abba"},
-    {anio: 1973, nombre: "ACDC"},
-    {anio: 1974, nombre: "Ramones"},
-    {anio: 1975, nombre: "Air Supply"},
-    {anio: 1976, nombre: "U2"},
-    {anio: 1977, nombre: "Village People"},
-    {anio: 1978, nombre: "Whitesnake"},
-    {anio: 1979, nombre: "Europe"},
-    {anio: 1980, nombre: "Depeche Mode"},
-    {anio: 1981, nombre: "Pet Shop Boys"},
-    {anio: 1982, nombre: "Soda Stereo"},
-    {anio: 1983, nombre: "Bon Jovi"},
-    {anio: 1984, nombre: "The Connells"},
-    {anio: 1985, nombre: "Guns N Roses"},
-    {anio: 1986, nombre: "Mana"},
-    {anio: 1987, nombre: "Nirvana"},
-    {anio: 1988, nombre: "Divididos"},
-    {anio: 1989, nombre: "The Cranberries"},
-    {anio: 1990, nombre: "Pearl Jam"},
-    {anio: 1991, nombre: "Oasis"},
-    {anio: 1992, nombre: "Hanson"},
-    {anio: 1993, nombre: "Korn"},
-    {anio: 1994, nombre: "Foo Fighters"},
-    {anio: 1995, nombre: "La Vela Puerca"},
-    {anio: 1996, nombre: "Nightwish"},
-    {anio: 1997, nombre: "Five"},
-    {anio: 1998, nombre: "Gorillaz"},
-    {anio: 1999, nombre: "The Sounds"},
-    {anio: 2000, nombre: "Linkin Park"},
-    {anio: 2001, nombre: "Fall Out Boy"},
-    {anio: 2002, nombre: "RED"},
-    {anio: 2003, nombre: "Red Hot Chilli Peppers"},
-    {anio: 2004, nombre: "The Rasmus"}];
 
 for (const item of listaBandas) {
     
@@ -176,8 +119,8 @@ console.log("La lista está completa, no se pudo agregar");
 listaBandas.pop();
 console.log(listaBandas.length + " bandas");
 */
-console.log('Tercera entrega - Proyecto JavaScript - DOM + Eventos + Storage & JSON + Workshop');
-console.log("DOM")
+//console.log('Tercera entrega - Proyecto JavaScript - DOM + Eventos + Storage & JSON + Workshop');
+//console.log("DOM")
 
 //  Acceder al DOM mediante ID
 
@@ -187,8 +130,6 @@ console.log("DOM")
 
 const h2Index = document.getElementById('h2Index')
     h2Index.innerHTML = '<h2> Servicios | Para Fiestas |';
-console.log(h2Index);
-
 
 // EVENTOS 
 
@@ -198,3 +139,15 @@ const searchButton = document.querySelector('#searchButton')
 searchButton.addEventListener('click', () => {
     console.log('Buscó ' + searchBar.value);
 })
+
+/* STORAGE */
+
+const nombreUsuarioEnStorage = localStorage.getItem('nombreUsuario')
+
+if (nombreUsuarioEnStorage ) {
+    console.log(`Bienvenido ${nombreUsuarioEnStorage}`);
+} else {
+    const nombreUsuario = prompt('Ingrese su nombre')
+    localStorage.setItem('nombreUsuario', nombreUsuario)
+    console.log(`Bienvenido ${nombreUsuario}`);
+}
