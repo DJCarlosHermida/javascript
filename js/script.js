@@ -1,8 +1,8 @@
 //Primera Entrega
 //CONDICIONAL
 
-console.log('Primer entrega - Proyecto JavaScript - Simulador');
 /*
+console.log('Primer entrega - Proyecto JavaScript - Simulador');
 
 
     
@@ -69,8 +69,8 @@ do {
 
 //Segunda entrega
 
-console.log('Segunda entrega - Proyecto JavaScript - Simulador + Funciones + Objetos + Arrays');
 /*
+console.log('Segunda entrega - Proyecto JavaScript - Simulador + Funciones + Objetos + Arrays');
 let usuario = nombre + anio;
     alert("Usuario: " + usuario);
 
@@ -119,8 +119,8 @@ console.log("La lista está completa, no se pudo agregar");
 listaBandas.pop();
 console.log(listaBandas.length + " bandas");
 */
-console.log('Tercera entrega - Proyecto JavaScript - DOM + Eventos + Storage & JSON + Workshop');
-console.log("DOM")
+//console.log('Tercera entrega - Proyecto JavaScript - DOM + Eventos + Storage & JSON + Workshop');
+//console.log("DOM")
 
 //  Acceder al DOM mediante ID
 
@@ -130,8 +130,6 @@ console.log("DOM")
 
 const h2Index = document.getElementById('h2Index')
     h2Index.innerHTML = '<h2> Servicios | Para Fiestas |';
-console.log(h2Index);
-
 
 // EVENTOS 
 
@@ -141,3 +139,15 @@ const searchButton = document.querySelector('#searchButton')
 searchButton.addEventListener('click', () => {
     console.log('Buscó ' + searchBar.value);
 })
+
+/* STORAGE */
+
+const nombreUsuarioEnStorage = localStorage.getItem('nombreUsuario')
+
+if (nombreUsuarioEnStorage ) {
+    console.log(`Bienvenido ${nombreUsuarioEnStorage}`);
+} else {
+    const nombreUsuario = prompt('Ingrese su nombre')
+    localStorage.setItem('nombreUsuario', nombreUsuario)
+    console.log(`Bienvenido ${nombreUsuario}`);
+}

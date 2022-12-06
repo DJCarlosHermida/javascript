@@ -11,16 +11,21 @@ console.log("Edad: " + edad);
 console.log("Año Nacimiento: "+ anio);
     correo = prompt("introduce tu correo");
 console.log("Correo: " + correo);
-*/
-const nombreUsuario = prompt('Nomnbre')
-    console.log('Nombre: '+ nombreUsuario)
+
+
+const nombreUsuario = inpui('Nomnbre')
+console.log('Nombre: '+ nombreUsuario)
 const emailUsuario = prompt('Email')
-    console.log('Email: '+ emailUsuario)
+console.log('Email: '+ emailUsuario)
 const edadUsuario = prompt('Edad')
-    console.log('Edad: '+ edadUsuario)
+console.log('Edad: '+ edadUsuario)
 const anioUsuario = 2022 - edadUsuario
-    console.log('Año Nacimiento: '+ anioUsuario)
+console.log('Año Nacimiento: '+ anioUsuario)
 
 const datosUsuario = document.createElement('div')
-    datosUsuario.innerHTML = `<p> Bienvenido ${nombreUsuario} </p> <p> email: ${emailUsuario} </p> <p> Edad: ${edadUsuario} </p> <p> Año Nacimiento: ${anioUsuario} </p>`
-    document.body.append(datosUsuario)
+datosUsuario.innerHTML = `<p> Bienvenido ${nombreUsuario} </p> <p> email: ${emailUsuario} </p> <p> Edad: ${edadUsuario} </p> <p> Año Nacimiento: ${anioUsuario} </p>`
+document.body.append(datosUsuario)
+*/
+
+// Class
+console.log('Una vez completado el formulario se creará un perfil ficticio con los datos ingresados');
