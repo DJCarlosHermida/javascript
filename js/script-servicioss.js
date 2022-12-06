@@ -28,58 +28,50 @@ const renderizarProductos = () => {
     })
 }
 
-
 // bandas rock
 
-const renderizarBanda = () => {
-    cardRock.innerHTML = "";
-    bandasFilter.forEach((banda) => {
-        const newBand = document.createElement('div')
-        newBand.className = 'cardRock'
-        newBand.innerHTML = `
-            <h4 class="cardTitle">${banda.nombre} </h4>
-            <img src="${banda.img}" class="bandaImg">
-            <p class="bandaDesc"> ${banda.anio}</p>
-        `
-        cardRock.append(newBand)
-    })
+ const renderizarBanda = () => {
+     cardRock.innerHTML = "";
+     bandasFilter.forEach((banda) => {
+         const newBand = document.createElement('div')
+         newBand.className = 'cardRock'
+         newBand.innerHTML = `
+             <h4 class="cardTitle">${banda.nombre} </h4>
+             <img src="${banda.img}" class="bandaImg">
+             <p class="bandaDesc"> ${banda.anio}</p>
+         `
+         cardRock.append(newBand)
+     })
     
-    // const buttonBand = document.querySelectorAll('buttonBand')
-    //       buttonBand.addEventListener('click', (e) => {
-    //         console.log(e.target)
-    //       })
-}
+     // const buttonBand = document.querySelectorAll('buttonBand')
+     //       buttonBand.addEventListener('click', (e) => {
+     //         console.log(e.target)
+     //       })
+ }
 
 // Listeners
 searchButton.addEventListener('click', () => {
     if(searchInput.value != ""){
-        bandasFilter = bandasRock.filter((item, index, arr) => {
-            if(item.anio === searchInput.value){
-                return item.anio
-            }
-            if(item.nombre === searchInput.value){
-                return item.nombre
-            }
-            
-          })
-      
-        if(bandasFilter.length){
-            bandasFilter.forEach(item => console.log(item));
-    
-            renderizarBanda();
-        }else{
-            alert(searchInput.value + " " + "no está en la lista");
+        bandasFilter = bandasRock.filter((item) => {
+        if (item.nombre === searchInput.value) {
+            return item.anio
         }
-    }else{
-        bandasFilter = bandasRock;
-        renderizarBanda();
+    })
+
+    if (bandasFilter.length) {
+        bandasFilter.forEach(item => console(item);
+            renderizarBanda();
+    } else {
+        alert("no existe ninguna banda" + searchInput.value);
     }
-  
-})
+}else{
+    bandasFilter = bandasRock;
+    renderizarBanda();
+}
 
 // Ejecuciones
 renderizarProductos()
-//renderizarBanda()
+renderizarBanda()
 
 
 /* STORAGE */
@@ -93,6 +85,3 @@ if (nombreUsuarioEnStorage ) {
     localStorage.setItem('nombreUsuario', nombreUsuario)
     console.log(`Bienvenido ${nombreUsuario}`);
 }
-
-/* BANDAS ROCK */
-
