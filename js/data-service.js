@@ -92,4 +92,3 @@ const bandasRock = [banda01, banda02, banda03, banda04, banda05, banda06, banda0
                     banda31, banda32, banda33, banda34, banda35, banda36, banda37, banda38, banda39, banda40,
                     banda41, banda42, banda43, banda44, banda45, banda46, banda47, banda48, banda49, banda50,
                     banda51, banda52, banda53, banda54, banda55, banda56]
-// prueba
