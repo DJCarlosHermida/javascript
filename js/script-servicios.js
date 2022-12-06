@@ -3,7 +3,10 @@ const searchInput = document.querySelector('#searchInput')
 const searchButton = document.querySelector('#searchButton')
 const cardContainer = document.querySelector('#cardContainer')
 const cardRock = document.querySelector('#cardRock')
+<<<<<<< HEAD
 let bandasFilter = bandasRock;
+=======
+>>>>>>> 3e23d70e6d514e03e94b6cdc97196398cfe0349f
 
 // Funciones
 // servicios
@@ -32,8 +35,12 @@ const renderizarProductos = () => {
 // bandas rock
 
 const renderizarBanda = () => {
+<<<<<<< HEAD
     cardRock.innerHTML = "";
     bandasFilter.forEach((banda) => {
+=======
+    bandasRock.forEach((banda) => {
+>>>>>>> 3e23d70e6d514e03e94b6cdc97196398cfe0349f
         const newBand = document.createElement('div')
         newBand.className = 'cardRock'
         newBand.innerHTML = `
@@ -52,6 +59,7 @@ const renderizarBanda = () => {
 
 // Listeners
 searchButton.addEventListener('click', () => {
+<<<<<<< HEAD
     if(searchInput.value != ""){
         bandasFilter = bandasRock.filter((item, index, arr) => {
             if(item.anio === searchInput.value){
@@ -75,11 +83,18 @@ searchButton.addEventListener('click', () => {
         renderizarBanda();
     }
   
+=======
+    console.log(searchInput.value);
+>>>>>>> 3e23d70e6d514e03e94b6cdc97196398cfe0349f
 })
 
 // Ejecuciones
 renderizarProductos()
+<<<<<<< HEAD
 //renderizarBanda()
+=======
+renderizarBanda()
+>>>>>>> 3e23d70e6d514e03e94b6cdc97196398cfe0349f
 
 
 /* STORAGE */
@@ -94,5 +109,8 @@ if (nombreUsuarioEnStorage ) {
     console.log(`Bienvenido ${nombreUsuario}`);
 }
 
+<<<<<<< HEAD
 /* BANDAS ROCK */
+=======
+>>>>>>> 3e23d70e6d514e03e94b6cdc97196398cfe0349f
 
