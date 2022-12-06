@@ -79,7 +79,7 @@ searchButton.addEventListener('click', () => {
 
 // Ejecuciones
 renderizarProductos()
-//renderizarBanda()
+renderizarBanda()
 
 
 /* STORAGE */
