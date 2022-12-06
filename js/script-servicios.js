@@ -2,8 +2,10 @@
 const searchInput = document.querySelector('#searchInput')
 const searchButton = document.querySelector('#searchButton')
 const cardContainer = document.querySelector('#cardContainer')
+const cardRock = document.querySelector('#cardRock')
 
 // Funciones
+// servicios
 const renderizarProductos = () => {
     servicios.forEach((producto) => {
         const newCard = document.createElement('div') 
@@ -26,6 +28,26 @@ const renderizarProductos = () => {
 }
 
 
+// bandas rock
+
+const renderizarBanda = () => {
+    bandasRock.forEach((banda) => {
+        const newBand = document.createElement('div')
+        newBand.className = 'cardRock'
+        newBand.innerHTML = `
+            <h4 class="cardTitle">${banda.nombre} </h4>
+            <img src="${banda.img}" class="bandaImg">
+            <p class="bandaDesc"> ${banda.anio}</p>
+        `
+        cardRock.append(newBand)
+    })
+    
+    // const buttonBand = document.querySelectorAll('buttonBand')
+    //       buttonBand.addEventListener('click', (e) => {
+    //         console.log(e.target)
+    //       })
+}
+
 // Listeners
 searchButton.addEventListener('click', () => {
     console.log(searchInput.value);
@@ -33,6 +55,7 @@ searchButton.addEventListener('click', () => {
 
 // Ejecuciones
 renderizarProductos()
+renderizarBanda()
 
 
 /* STORAGE */
@@ -46,3 +69,5 @@ if (nombreUsuarioEnStorage ) {
     localStorage.setItem('nombreUsuario', nombreUsuario)
     console.log(`Bienvenido ${nombreUsuario}`);
 }
+
+

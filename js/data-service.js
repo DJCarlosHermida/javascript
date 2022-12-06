@@ -78,44 +78,18 @@ const banda46 = new BandasRock(46, '1994', 'Foo Fighters', 'https://upload.wikim
 const banda47 = new BandasRock(47, '1995', 'La Vela Puerca', 'https://www.cmtv.com.ar/imagenes_artistas/167.jpg')
 const banda48 = new BandasRock(48, '1996', 'Nightwish', 'https://lh3.googleusercontent.com/75-seCiSGbPcyEeYEjtyIh8ZRuV2STunxb9786l3SMSpOQxQmttWWkmr0vgpzrgYDGaAaC2icxKLtyAu3rzaP2k')
 const banda49 = new BandasRock(49, '1997', 'Five', 'https://www.upsocl.com/wp-content/uploads/2018/01/Sin-ti%CC%81tulo-4-2.jpg')
-const banda50 = new BandasRock(50, '1998')
-const banda51 = new BandasRock(51, '1999')
-const banda52 = new BandasRock(55, '2000')
-const banda53 = new BandasRock(53, '2001')
-const banda54 = new BandasRock(54, '2002')
-const banda55 = new BandasRock(55, '2003')
-const banda56 = new BandasRock(56, '2004')
+const banda50 = new BandasRock(50, '1998', 'Gorillaz', 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Gorillaz_in_Miami.jpg/1920px-Gorillaz_in_Miami.jpg')
+const banda51 = new BandasRock(51, '1999', 'The Sounds', 'https://upload.wikimedia.org/wikipedia/en/4/41/The_Sound_band.jpg')
+const banda52 = new BandasRock(55, '2000', 'Linkin Park', 'https://static.eldiario.es/clip/1df45631-4f7d-44c7-a149-9b85b3eceb4f_16-9-aspect-ratio_default_0.jpg')
+const banda53 = new BandasRock(53, '2001', 'Fall Out Boy', 'https://lh3.googleusercontent.com/ePMQpFFKcbfCckXP3ncEzZQ0BznVQPxteEozjeNwzvIc7YNgxkTmRzHXdueZT8Vg3_qHRbGCu5awGUleemNLyCR-')
+const banda54 = new BandasRock(54, '2002', 'RED', 'https://images.squarespace-cdn.com/content/v1/54bfc46be4b0a0e8a51ebbf6/1559868475780-606E02MHG1Q8LAWH3R51/RED8A.jpg')
+const banda55 = new BandasRock(55, '2003', 'Red Hot Chilli Peppers', 'https://img.youtube.com/vi/YlUKcNNmywk/maxresdefault.jpg?auto=webp&width=494')
+const banda56 = new BandasRock(56, '2004', 'The Rasmus', 'https://crazyminds.es/wp-content/uploads/The-Rasmus-2022.jpeg')
 
-/*
-    {anio: 1974, nombre: "Ramones"},
-    {anio: 1975, nombre: "Air Supply"},
-    {anio: 1976, nombre: "U2"},
-    {anio: 1977, nombre: "Village People"},
-    {anio: 1978, nombre: "Whitesnake"},
-    {anio: 1979, nombre: "Europe"},
-    {anio: 1980, nombre: "Depeche Mode"},
-    {anio: 1981, nombre: "Pet Shop Boys"},
-    {anio: 1982, nombre: "Soda Stereo"},
-    {anio: 1983, nombre: "Bon Jovi"},
-    {anio: 1984, nombre: "The Connells"},
-    {anio: 1985, nombre: "Guns N Roses"},
-    {anio: 1986, nombre: "Mana"},
-    {anio: 1987, nombre: "Nirvana"},
-    {anio: 1988, nombre: "Divididos"},
-    {anio: 1989, nombre: "The Cranberries"},
-    {anio: 1990, nombre: "Pearl Jam"},
-    {anio: 1991, nombre: "Oasis"},
-    {anio: 1992, nombre: "Hanson"},
-    {anio: 1993, nombre: "Korn"},
-    {anio: 1994, nombre: "Foo Fighters"},
-    {anio: 1995, nombre: "La Vela Puerca"},
-    {anio: 1996, nombre: "Nightwish"},
-    {anio: 1997, nombre: "Five"},
-    {anio: 1998, nombre: "Gorillaz"},
-    {anio: 1999, nombre: "The Sounds"},
-    {anio: 2000, nombre: "Linkin Park"},
-    {anio: 2001, nombre: "Fall Out Boy"},
-    {anio: 2002, nombre: "RED"},
-    {anio: 2003, nombre: "Red Hot Chilli Peppers"},
-    {anio: 2004, nombre: "The Rasmus"}];
-*/
+const bandasRock = [banda01, banda02, banda03, banda04, banda05, banda06, banda07, banda08, banda09, banda10,
+                    banda11, banda12, banda13, banda14, banda15, banda16, banda17, banda18, banda19, banda20,
+                    banda21, banda22, banda23, banda24, banda25, banda26, banda27, banda28, banda29, banda30,
+                    banda31, banda32, banda33, banda34, banda35, banda36, banda37, banda38, banda39, banda40,
+                    banda41, banda42, banda43, banda44, banda45, banda46, banda47, banda48, banda49, banda50,
+                    banda51, banda52, banda53, banda54, banda55, banda56]
+

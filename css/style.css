@@ -32,6 +32,21 @@
   margin-bottom: 10px;
 }
 
+/* Bandas Rock*/
+.cardRock {
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.bandaImg {
+  width: 150px;
+}
+
+.bandaDesc{
+  color: orange;
+}
+
 .button {
   margin: 10px 0;
   background-color: rgba(97, 13, 13, 0.356);
