@@ -84,23 +84,66 @@ searchButton.addEventListener('click', () => {
 renderizarProductos()
 //renderizarBanda()
 
-
 /* STORAGE */
 
 const nombreUsuarioEnStorage = localStorage.getItem('nombreUsuario')
-
-if (nombreUsuarioEnStorage) {
-    Swal.fire(`Hola ${nombreUsuarioEnStorage}`);
-} else {
-    const nombreUsuario = prompt('Para continuar es nesesario Ingrear su nombre')
-    localStorage.setItem('nombreUsuario', nombreUsuario)
-    console.log(`Hola ${nombreUsuario}`);
-}
-
 const emailUsuarioEnStorage = localStorage.getItem('emailUsuario')
 
-if (emailUsuarioEnStorage) {
-} else {
-    const emailUsuario = prompt('Ingrese un email (se enviará la consulta del servicio)')
-    localStorage.setItem('emailUsuario', emailUsuario)
+function alertUser(){
+    Swal.fire({
+        title: 'Usuario',
+        input: 'text',
+        inputLabel: 'Ingrese su usuario',
+        inputPlaceholder: 'Usuario'
+      }).then((result) => {
+        if (result.value) {
+            console.log("Result usuario: " + result.value);
+            localStorage.setItem('nombreUsuario', result.value)
+            alertEmail()
+        }
+     });
 }
+
+function alertEmail(){
+    Swal.fire({
+        title: 'Input email address',
+        input: 'email',
+        inputLabel: 'Your email address',
+        inputPlaceholder: 'Enter your email address'
+      }).then((result) => {
+        if (result.value) {
+            console.log("Result: " + result.value);
+            localStorage.setItem('emailUsuario', result.value)
+ 
+        }
+     });
+      
+}
+
+if (nombreUsuarioEnStorage && emailUsuarioEnStorage) {
+    console.log(`Bienvenido ${nombreUsuarioEnStorage}`);
+    console.log(`Bienvenido ${emailUsuarioEnStorage}`);
+} else {
+      alertUser();
+
+}
+
+
+
+// const nombreUsuarioEnStorage = localStorage.getItem('nombreUsuario')
+
+// if (nombreUsuarioEnStorage) {
+//     Swal.fire(`Hola ${nombreUsuarioEnStorage}`);
+// } else {
+//     const nombreUsuario = prompt('Para continuar es nesesario Ingrear su nombre')
+//     localStorage.setItem('nombreUsuario', nombreUsuario)
+//     console.log(`Hola ${nombreUsuario}`);
+// }
+
+// const emailUsuarioEnStorage = localStorage.getItem('emailUsuario')
+
+// if (emailUsuarioEnStorage) {
+// } else {
+//     const emailUsuario = prompt('Ingrese un email (para enviarle la respuesta a su consulta)')
+//     localStorage.setItem('emailUsuario', emailUsuario)
+// }
