@@ -32,6 +32,11 @@
 }
 
 /* Bandas Rock*/
+#h3Bandas{
+  color: whitesmoke;
+  text-align: center;
+  padding: 20px;
+}
 .cardRock {
   align-items: flex-start;
   justify-content: space-between;
@@ -63,6 +68,7 @@
   background-color: rgba(97, 13, 13, 0.644);
   box-shadow: 1px 1px 10px lightgrey;
 }
+
 
 /*PARTIAL*/
 .contenidoP p {

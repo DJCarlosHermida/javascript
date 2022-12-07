@@ -89,7 +89,7 @@ renderizarProductos()
 
 const nombreUsuarioEnStorage = localStorage.getItem('nombreUsuario')
 
-if (nombreUsuarioEnStorage ) {
+if (nombreUsuarioEnStorage) {
     Swal.fire(`Hola ${nombreUsuarioEnStorage}`);
 } else {
     const nombreUsuario = prompt('Para continuar es nesesario Ingrear su nombre')
@@ -99,28 +99,8 @@ if (nombreUsuarioEnStorage ) {
 
 const emailUsuarioEnStorage = localStorage.getItem('emailUsuario')
 
-if (emailUsuarioEnStorage ) {
+if (emailUsuarioEnStorage) {
 } else {
     const emailUsuario = prompt('Ingrese un email (se enviará la consulta del servicio)')
     localStorage.setItem('emailUsuario', emailUsuario)
 }
-
-/* Sweet Alert */
-
-
-
-/*
-const sweetAlert = document.querySelector('#searchButton')
-    sweetAlert.addEventListener('click', () => {
-        Swal.fire({
-            title: 'Ver Bandas De',
-            text: 'Modal with a custom image.',
-            imageUrl: 'https://unsplash.it/400/200',
-            imageWidth: 400,
-            imageHeight: 200,
-            imageAlt: 'Custom image',
-          })
-
-    })
-
-*/
