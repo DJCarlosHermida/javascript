@@ -16,18 +16,21 @@ const renderizarProductos = () => {
             <img src="${producto.img}" class="cardImg">
             <p class="cardDesc"> ${producto.titulo}</p>
             <span class="cardPrice"> $${producto.precio} </span>
-            <button class="button" data-id="${producto.nombre}"> Agregar al Carrito </button>
+            <button class="button" data-id="${producto.nombre}" title="Enviar Consulta"> Consultar </button>
         `
         cardContainer.append(newCard)
     })
     const buttons = document.querySelectorAll('.button')
     buttons.forEach((button) => {
-        button.addEventListener('click', (e) => {
-            console.log(e.target);
+        button.addEventListener('click', (btn) => {
+            Swal.fire(
+                'Consulta enviada',
+                'En breve nos comunicaremos contigo',
+                'success'
+                );
         })
     })
 }
-
 
 // bandas rock
 
@@ -72,7 +75,7 @@ searchButton.addEventListener('click', () => {
         }
     }else{
         bandasFilter = bandasRock;
-        renderizarBanda();
+        //renderizarBanda();
     }
   
 })
@@ -87,14 +90,25 @@ renderizarProductos()
 const nombreUsuarioEnStorage = localStorage.getItem('nombreUsuario')
 
 if (nombreUsuarioEnStorage ) {
-    console.log(`Bienvenido ${nombreUsuarioEnStorage}`);
+    Swal.fire(`Hola ${nombreUsuarioEnStorage}`);
 } else {
-    const nombreUsuario = prompt('Ingrese su nombre')
+    const nombreUsuario = prompt('Para continuar es nesesario Ingrear su nombre')
     localStorage.setItem('nombreUsuario', nombreUsuario)
-    console.log(`Bienvenido ${nombreUsuario}`);
+    console.log(`Hola ${nombreUsuario}`);
+}
+
+const emailUsuarioEnStorage = localStorage.getItem('emailUsuario')
+
+if (emailUsuarioEnStorage ) {
+} else {
+    const emailUsuario = prompt('Ingrese un email (se enviará la consulta del servicio)')
+    localStorage.setItem('emailUsuario', emailUsuario)
 }
 
 /* Sweet Alert */
+
+
+
 /*
 const sweetAlert = document.querySelector('#searchButton')
     sweetAlert.addEventListener('click', () => {

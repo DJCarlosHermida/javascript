@@ -7,7 +7,6 @@
   box-sizing: border-box;
   font-family: sans-serif; }
 
-
 /* CARDS */
 .cardContainer {
   justify-content: space-around;
@@ -228,7 +227,7 @@ main {
   background-position: 0px;
   background-repeat: no-repeat;
   background-size: cover; }
-
+/*  */
 .style-about {
   color: whitesmoke;
   background-color: rgba(97, 13, 13, 0.507);
