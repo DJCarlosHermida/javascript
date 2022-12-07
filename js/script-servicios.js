@@ -57,7 +57,7 @@ searchButton.addEventListener('click', () => {
             if(item.anio === searchInput.value){
                 return item.anio
             }
-            if(item.nombre === searchInput.value){
+            if(item.nombre.toLowerCase() === searchInput.value.toLowerCase()){
                 return item.nombre
             }
             
@@ -68,7 +68,7 @@ searchButton.addEventListener('click', () => {
     
             renderizarBanda();
         }else{
-            alert(searchInput.value + " " + "no está en la lista");
+            Swal.fire(searchInput.value + " " + "no está en la lista")
         }
     }else{
         bandasFilter = bandasRock;
@@ -79,7 +79,7 @@ searchButton.addEventListener('click', () => {
 
 // Ejecuciones
 renderizarProductos()
-renderizarBanda()
+//renderizarBanda()
 
 
 /* STORAGE */
@@ -94,5 +94,19 @@ if (nombreUsuarioEnStorage ) {
     console.log(`Bienvenido ${nombreUsuario}`);
 }
 
-/* BANDAS ROCK */
+/* Sweet Alert */
+/*
+const sweetAlert = document.querySelector('#searchButton')
+    sweetAlert.addEventListener('click', () => {
+        Swal.fire({
+            title: 'Ver Bandas De',
+            text: 'Modal with a custom image.',
+            imageUrl: 'https://unsplash.it/400/200',
+            imageWidth: 400,
+            imageHeight: 200,
+            imageAlt: 'Custom image',
+          })
 
+    })
+
+*/

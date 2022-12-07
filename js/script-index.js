@@ -134,10 +134,10 @@ console.log(h2Index);
 
 
 // EVENTOS 
-
+/*
 const searchBar = document.querySelector('#searchBar')
 const searchButton = document.querySelector('#searchButton')
 
 searchButton.addEventListener('click', () => {
     console.log('Buscó ' + searchBar.value);
-})
+})*/

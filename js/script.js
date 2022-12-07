@@ -132,22 +132,12 @@ const h2Index = document.getElementById('h2Index')
     h2Index.innerHTML = '<h2> Servicios | Para Fiestas |';
 
 // EVENTOS 
-
+/*
 const searchBar = document.querySelector('#searchBar')
 const searchButton = document.querySelector('#searchButton')
 
 searchButton.addEventListener('click', () => {
     console.log('Buscó ' + searchBar.value);
 })
+*/
 
-/* STORAGE */
-
-const nombreUsuarioEnStorage = localStorage.getItem('nombreUsuario')
-
-if (nombreUsuarioEnStorage ) {
-    console.log(`Bienvenido ${nombreUsuarioEnStorage}`);
-} else {
-    const nombreUsuario = prompt('Ingrese su nombre')
-    localStorage.setItem('nombreUsuario', nombreUsuario)
-    console.log(`Bienvenido ${nombreUsuario}`);
-}

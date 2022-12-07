@@ -224,14 +224,14 @@ main {
     color: whitesmoke; }
 
 .main-about {
-  background-image: url(../img/auricular-color.jpg);
+  background-image: url(../img/auricular-black.jpg);
   background-position: 0px;
   background-repeat: no-repeat;
   background-size: cover; }
 
 .style-about {
   color: whitesmoke;
-  background-color: rgba(97, 13, 13, 0.672);
+  background-color: rgba(97, 13, 13, 0.507);
   border-radius: 20px;
   padding: 50px; }
 
