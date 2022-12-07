@@ -6,7 +6,7 @@ const sendForm = document.querySelector('#sendForm')
 Swal.fire({
   title: 'Enviando Formulario',
   html: 'Ésta ventana se cerrará automaticamente <b></b>.',
-  timer: 3000,
+  timer: 1500,
   timerProgressBar: true,
   didOpen: () => {
     Swal.showLoading()
