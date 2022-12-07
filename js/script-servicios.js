@@ -97,7 +97,7 @@ function alertUser(){
         inputPlaceholder: 'Se ingresa por únca vez'
       }).then((result) => {
         if (result.value) {
-            console.log("Result usuario: " + result.value);
+            //console.log("Result usuario: " + result.value);
             localStorage.setItem('nombreUsuario', result.value)
             alertEmail()
         }
