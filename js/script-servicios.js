@@ -91,10 +91,10 @@ let emailUsuarioEnStorage = localStorage.getItem('emailUsuario')
 
 function alertUser(){
     Swal.fire({
-        title: 'Usuario',
+        title: 'Para continuar es necesario ingresar algunos datos:',
         input: 'text',
-        inputLabel: 'Ingrese su usuario',
-        inputPlaceholder: 'Usuario'
+        inputLabel: 'Nombre',
+        inputPlaceholder: 'Se ingresa por únca vez'
       }).then((result) => {
         if (result.value) {
             console.log("Result usuario: " + result.value);
@@ -106,10 +106,10 @@ function alertUser(){
 
 function alertEmail(){
     Swal.fire({
-        title: 'Input email address',
+        title: 'Ingrese su email',
         input: 'email',
-        inputLabel: 'Your email address',
-        inputPlaceholder: 'Enter your email address'
+        inputLabel: 'se enviará la consulta que realice al email ingresado',
+        inputPlaceholder: 'ingresar email'
       }).then((result) => {
         if (result.value) {
             console.log("Result: " + result.value);
@@ -122,30 +122,9 @@ function alertEmail(){
 
 if (nombreUsuarioEnStorage && emailUsuarioEnStorage) {
     Swal.fire(`Hola de nuevo ${nombreUsuarioEnStorage}`);
-    //console.log(`Bienvenido ${nombreUsuarioEnStorage}`);
-    //console.log(`Bienvenido ${emailUsuarioEnStorage}`);
 } else {
       alertUser();
 
 }
 
 
-/* STORAGE primitivo */
-
-// const nombreUsuarioEnStorage = localStorage.getItem('nombreUsuario')
-
-// if (nombreUsuarioEnStorage) {
-//     Swal.fire(`Hola ${nombreUsuarioEnStorage}`);
-// } else {
-//     const nombreUsuario = prompt('Para continuar es nesesario Ingrear su nombre')
-//     localStorage.setItem('nombreUsuario', nombreUsuario)
-//     console.log(`Hola ${nombreUsuario}`);
-// }
-
-// const emailUsuarioEnStorage = localStorage.getItem('emailUsuario')
-
-// if (emailUsuarioEnStorage) {
-// } else {
-//     const emailUsuario = prompt('Ingrese un email (para enviarle la respuesta a su consulta)')
-//     localStorage.setItem('emailUsuario', emailUsuario)
-// }
