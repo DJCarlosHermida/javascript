@@ -84,10 +84,10 @@ searchButton.addEventListener('click', () => {
 renderizarProductos()
 //renderizarBanda()
 
-/* STORAGE */
+/* STORAGE  OK*/
 
-const nombreUsuarioEnStorage = localStorage.getItem('nombreUsuario')
-const emailUsuarioEnStorage = localStorage.getItem('emailUsuario')
+let nombreUsuarioEnStorage = localStorage.getItem('nombreUsuario')
+let emailUsuarioEnStorage = localStorage.getItem('emailUsuario')
 
 function alertUser(){
     Swal.fire({
@@ -121,14 +121,16 @@ function alertEmail(){
 }
 
 if (nombreUsuarioEnStorage && emailUsuarioEnStorage) {
-    console.log(`Bienvenido ${nombreUsuarioEnStorage}`);
-    console.log(`Bienvenido ${emailUsuarioEnStorage}`);
+    Swal.fire(`Hola de nuevo ${nombreUsuarioEnStorage}`);
+    //console.log(`Bienvenido ${nombreUsuarioEnStorage}`);
+    //console.log(`Bienvenido ${emailUsuarioEnStorage}`);
 } else {
       alertUser();
 
 }
 
 
+/* STORAGE primitivo */
 
 // const nombreUsuarioEnStorage = localStorage.getItem('nombreUsuario')
 
