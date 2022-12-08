@@ -126,5 +126,3 @@ if (nombreUsuarioEnStorage && emailUsuarioEnStorage) {
       alertUser();
 
 }
-
-
