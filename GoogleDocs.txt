@@ -1,4 +1,4 @@
-Proyecto |Para Fiestas| - Coder House
+	Proyecto |Para Fiestas| - Coder House
 |Desarrollo Web|
 
 Primeramente el nombre de la página lo elegí por tema de SEO,
@@ -47,10 +47,24 @@ También contiene efectos vistosos con JavaScript.
 |Javascript|
 Con js aplicaremos los conceptos de variables, control de flujos, ciclos e iteraciones
 Funciones, Objetos, Arrays. Manipularemos el DOM. Aplicaremos Eventos
-Storage & JSON, workshop. 
-Veremos operadores avanzados, agregaremos librerías, asincronía y promesas, Ayax & Fetch
-incluidemos Librerías (ejemplo JQuery, ajax & Fetch, framework & NodeJS
-Framework (la idea es acomodar todo para continuar el proyecto con React y Mongo db) & Node Js.
+Storage & JSON, FETCH (básico) workshop (en realidad no tengo intensiones al momento de hacer un carrito de compras, ya que el usuario no puede comprar 4 servicios de fiestas para el mismo evento,
+por eso el botón de consulta)
+Operadores avanzados, agregaremos librería, asincronía y promesas, Ayax & Fetch (básico)
+
+1 En la página servicios.html
+luego de la biografia haciendo scroll, está la parte de FETCH
+
+2 en servicios 
+Primero pide nombre y correo. (localStorage), para la proxima vez que entre a ese apartado lo saludará...
+con esc puede omitirlo y seguir navegando. Pero para enviar la consulta del servicio va a ser necesario ingresar esos datos. 
+Para simular el carrito, tiene un buscador, donde usted introduce su año de nacimiento, y le retorna la banda de rock que se creó en ese año.
+
+luego están las cards de servicios con su contenido desde js. El botón consultar en teoría enviará los datos de la cards a mi correo en modo consulta. y la respuesta sería al email introducido.
+
+posteriormente crearía un perdilUsuario con todos esos datos. donde guardaría además de nombre y correo. la consulta de servicio con la fecha.
+
+le saluda atte
+
 
 
 Carlos Hermida
