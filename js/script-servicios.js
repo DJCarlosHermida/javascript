@@ -121,7 +121,9 @@ function alertEmail(){
 }
 
 if (nombreUsuarioEnStorage && emailUsuarioEnStorage) {
-    Swal.fire(`Hola de nuevo ${nombreUsuarioEnStorage}`);
+    setTimeout(() => {
+        Swal.fire(`Hola de nuevo ${nombreUsuarioEnStorage}`);
+    }, 1500)
 } else {
       alertUser();
 
