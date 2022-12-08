@@ -47,10 +47,7 @@ const renderizarBanda = () => {
         cardRock.append(newBand)
     })
     
-    // const buttonBand = document.querySelectorAll('buttonBand')
-    //       buttonBand.addEventListener('click', (e) => {
-    //         console.log(e.target)
-    //       })
+   
 }
 
 // Listeners
@@ -82,9 +79,8 @@ searchButton.addEventListener('click', () => {
 
 // Ejecuciones
 renderizarProductos()
-//renderizarBanda()
 
-/* STORAGE  OK*/
+/* STORAGE  */
 
 let nombreUsuarioEnStorage = localStorage.getItem('nombreUsuario')
 let emailUsuarioEnStorage = localStorage.getItem('emailUsuario')
@@ -108,7 +104,7 @@ function alertEmail(){
     Swal.fire({
         title: 'Ingrese su email',
         input: 'email',
-        inputLabel: 'se enviará la consulta que realice al email ingresado',
+        inputLabel: 'la consulta se enviará al email ingresado',
         inputPlaceholder: 'ingresar email'
       }).then((result) => {
         if (result.value) {
@@ -128,3 +124,12 @@ if (nombreUsuarioEnStorage && emailUsuarioEnStorage) {
       alertUser();
 
 }
+
+/* JSON */
+console.log('Desde Javascript: ', servicios);
+
+const serviciosEnJSON = JSON.stringify(servicios)
+
+
+
+
