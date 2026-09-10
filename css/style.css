@@ -659,3 +659,319 @@ article img {
   .section5 td:hover {
     color: orange;
     background-color: rgba(97, 13, 13, 0.864); }
+
+/* ========== Página Bandas Rock ========== */
+.bandas-page {
+  font-family: "Manrope", sans-serif;
+  background: #0d0d0d;
+  height: 100dvh;
+  overflow: hidden;
+}
+
+.bandas-page .body {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  overflow: hidden;
+  background-image:
+    linear-gradient(180deg, rgba(10, 6, 6, 0.62) 0%, rgba(20, 8, 8, 0.88) 100%),
+    url("../img/controlador.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.bandas-page .section1 {
+  position: relative;
+  background: transparent;
+}
+
+.bandas-page h1,
+.bandas-page h2,
+.bandas-page h3,
+.bandas-page h4 {
+  background: none;
+  animation: none;
+  border-radius: 0;
+  text-align: inherit;
+}
+
+.bandas-nav {
+  width: 100%;
+  justify-content: center;
+  padding: 14px 20px;
+}
+
+.bandas-nav__brand {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.bandas-footer {
+  padding: 12px 20px;
+  background: transparent;
+}
+
+.bandas-footer__text {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(246, 241, 234, 0.85);
+  font-size: 13px;
+}
+
+.bandas-stage {
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 8px 20px 12px;
+  overflow: hidden;
+}
+
+.bandas-hero__content {
+  width: min(640px, 100%);
+  text-align: center;
+  color: #f6f1ea;
+  flex: 0 0 auto;
+}
+
+.bandas-hero__eyebrow {
+  margin: 0 0 6px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  font-size: 11px;
+  color: orange;
+}
+
+.bandas-hero__title {
+  margin: 0 0 8px;
+  font-family: "Oswald", sans-serif;
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: 700;
+  line-height: 0.95;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.bandas-hero__lead {
+  margin: 0 auto 14px;
+  max-width: 520px;
+  font-size: 15px;
+  line-height: 1.4;
+  color: rgba(246, 241, 234, 0.82);
+}
+
+.bandas-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 166, 0, 0.35);
+  border-radius: 999px;
+  padding: 4px 4px 4px 10px;
+  backdrop-filter: blur(10px);
+}
+
+.bandas-search__input {
+  width: 14ch;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  font-size: 15px;
+  padding: 8px 8px;
+  outline: none;
+  text-align: center;
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+.bandas-search__input::-webkit-outer-spin-button,
+.bandas-search__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.bandas-search__input::placeholder {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.bandas-search__btn {
+  border: 0;
+  border-radius: 999px;
+  background: orange;
+  color: #3b0d0d;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 6px 10px;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.bandas-search__btn:hover {
+  background: #ffd27a;
+  color: #3b0d0d;
+}
+
+.bandas-chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.bandas-chip {
+  border: 1px solid rgba(255, 166, 0, 0.4);
+  background: rgba(97, 13, 13, 0.45);
+  color: #fff;
+  border-radius: 999px;
+  padding: 5px 12px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.bandas-chip:hover {
+  background: orange;
+  color: #3b0d0d;
+}
+
+.bandas-results {
+  width: min(720px, 100%);
+  min-height: 0;
+  flex: 0 1 auto;
+  overflow: auto;
+  padding: 0;
+  background: none;
+}
+
+.bandas-results:empty {
+  display: none;
+}
+
+.bandas-results__intro {
+  text-align: center;
+  color: orange;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-size: 11px;
+  margin: 0 0 10px;
+}
+
+.bandas-empty {
+  text-align: center;
+  color: rgba(246, 241, 234, 0.75);
+  margin: 0 auto;
+  max-width: 460px;
+  font-size: 14px;
+}
+
+.bandas-empty--error p {
+  margin: 0 0 4px;
+}
+
+.bandas-grid {
+  display: grid;
+  gap: 12px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.bandas-card {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  overflow: hidden;
+  border: 1px solid rgba(255, 166, 0, 0.28);
+  border-radius: 16px;
+  background: rgba(18, 10, 10, 0.82);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+  max-height: 160px;
+}
+
+.bandas-card__media {
+  position: relative;
+  min-height: 160px;
+  background: linear-gradient(160deg, #611010, #1a0a0a);
+}
+
+.bandas-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.bandas-card__fallback {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 42px;
+  color: orange;
+}
+
+.bandas-card__body {
+  padding: 16px 20px;
+  color: #f6f1ea;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bandas-card__year {
+  margin: 0 0 4px;
+  font-family: "Oswald", sans-serif;
+  font-size: 28px;
+  line-height: 1;
+  color: orange;
+}
+
+.bandas-card__name {
+  margin: 0 0 6px;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.bandas-card__copy {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+  color: rgba(246, 241, 234, 0.82);
+}
+
+@media (max-width: 720px) {
+  .bandas-search {
+    border-radius: 999px;
+  }
+
+  .bandas-card {
+    grid-template-columns: 100px 1fr;
+    max-height: 132px;
+  }
+
+  .bandas-card__media {
+    min-height: 132px;
+  }
+
+  .bandas-card__name {
+    font-size: 18px;
+  }
+
+  .bandas-card__copy {
+    font-size: 12px;
+  }
+}

@@ -1,12 +1,5 @@
-// Select
-const searchInput = document.querySelector('#searchInput')
-const searchButton = document.querySelector('#searchButton')
 const cardContainer = document.querySelector('#cardContainer')
-const cardRock = document.querySelector('#cardRock')
-let bandasFilter = bandasRock;
 
-// Funciones
-// servicios
 const renderizarProductos = () => {
     servicios.forEach((producto) => {
         const newCard = document.createElement('div') 
@@ -32,52 +25,6 @@ const renderizarProductos = () => {
     })
 }
 
-// bandas rock
-
-const renderizarBanda = () => {
-    cardRock.innerHTML = "";
-    bandasFilter.forEach((banda) => {
-        const newBand = document.createElement('div')
-        newBand.className = 'cardRock'
-        newBand.innerHTML = `
-            <h4 class="cardTitle">${banda.nombre} </h4>
-            <img src="${banda.img}" class="bandaImg">
-            <p class="bandaDesc"> ${banda.anio}</p>
-        `
-        cardRock.append(newBand)
-    })
-    
-   
-}
-
-// Listeners
-searchButton.addEventListener('click', () => {
-    if(searchInput.value != ""){
-        bandasFilter = bandasRock.filter((item, index, arr) => {
-            if(item.anio === searchInput.value){
-                return item.anio
-            }
-            if(item.nombre.toLowerCase() === searchInput.value.toLowerCase()){
-                return item.nombre
-            }
-            
-          })
-      
-        if(bandasFilter.length){
-            bandasFilter.forEach(item => console.log(item));
-    
-            renderizarBanda();
-        }else{
-            Swal.fire(searchInput.value + " " + "no está en la lista")
-        }
-    }else{
-        bandasFilter = bandasRock;
-        //renderizarBanda();
-    }
-  
-})
-
-// Ejecuciones
 renderizarProductos()
 
 /* STORAGE  */
