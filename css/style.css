@@ -788,12 +788,27 @@ article img {
   border: 0;
   background: transparent;
   color: #fff;
+  -webkit-text-fill-color: #fff;
+  caret-color: #fff;
   font-size: 15px;
   padding: 8px 8px;
   outline: none;
   text-align: center;
   appearance: textfield;
   -moz-appearance: textfield;
+}
+
+.bandas-search__input:focus {
+  color: #fff;
+  -webkit-text-fill-color: #fff;
+}
+
+.bandas-search__input:-webkit-autofill,
+.bandas-search__input:-webkit-autofill:hover,
+.bandas-search__input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #fff;
+  caret-color: #fff;
+  transition: background-color 9999s ease-out;
 }
 
 .bandas-search__input::-webkit-outer-spin-button,

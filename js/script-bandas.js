@@ -99,6 +99,11 @@ const ejecutarBusqueda = (consulta) => {
     renderizar(buscarPorAnio(valor), valor)
 }
 
+const enfocarPrompt = () => {
+    searchInput.focus()
+    searchInput.select()
+}
+
 searchInput.addEventListener('input', () => {
     searchInput.value = searchInput.value.replace(/\D/g, '').slice(0, 4)
 })
@@ -106,10 +111,12 @@ searchInput.addEventListener('input', () => {
 bandasForm.addEventListener('submit', (event) => {
     event.preventDefault()
     ejecutarBusqueda()
+    enfocarPrompt()
 })
 
 chips.addEventListener('click', (event) => {
     const chip = event.target.closest('[data-query]')
     if (!chip) return
     ejecutarBusqueda(chip.dataset.query)
+    enfocarPrompt()
 })
